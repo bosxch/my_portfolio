@@ -62,7 +62,7 @@ const education = [
     description: "+800 horas de formación intensiva en desarrollo web full stack con tecnologías modernas.",
     descriptionEn: "+800 hours of intensive training in full stack web development with modern technologies.",
     certificateUrl:
-      "https://certificates.soyhenry.com/new-cert?id=e9ae6f73d48f37bb49315dd56d62cd1c98bea98c14a6b50e6f200d20f4b50a2a",
+      "https://www.linkedin.com/in/amparo-cardoso-bosch/overlay/Education/841589134/treasury/?profileId=ACoAADXRgF0BjYlAFIsfcRFKYgueIkmorcNcSVQ",
     tools: ["JavaScript", "React", "Redux", "Node.js", "Express.js", "PostgreSQL", "Sequelize"],
   },
   {
@@ -73,7 +73,7 @@ const education = [
     periodEn: "2022",
     description: "Fundamentos de programación y primeros pasos en el mundo tech.",
     descriptionEn: "Programming fundamentals and first steps in the tech world.",
-    certificateUrl: "https://eggeducacion.com/es-AR/certificates/656259e3ae4f7a000defdbbe",
+    certificateUrl: "https://www.linkedin.com/in/amparo-cardoso-bosch/overlay/Education/841819628/treasury/?profileId=ACoAADXRgF0BjYlAFIsfcRFKYgueIkmorcNcSVQ",
     tools: ["Lógica de programación", "Fundamentos"],
   },
 ]
@@ -97,7 +97,7 @@ const certifications = [
     title: "Fundamentos profesionales del desarrollo de software",
     titleEn: "Professional Software Development Fundamentals",
     issuer: "Microsoft & LinkedIn",
-    url: "https://www.linkedin.com/learning/certificates/3b5e7e5df3f46f90de6c89e15d66f2b9be2e79a3ef54e88c49b0cf1a8c0b6c39",
+    url: "https://www.linkedin.com/learning/certificates/9e7b903844ba10fbf452e3ab368358d44309bb74928a7d41a53c8d9f6811083f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Brjv7H%2F3dTV2qq8MQEKMdtw%3D%3D",
     tools: ["Desarrollo de software", "Metodologías"],
   },
   {
@@ -105,7 +105,7 @@ const certifications = [
     titleEn: "EF SET English Certificate (C1 Advanced)",
     issuer: "EF Education First",
     score: "63/100",
-    url: "https://www.efset.org/cert/DYDj9i",
+    url: "https://cert.efset.org/sxWNQR",
     tools: ["Inglés C1", "Comunicación"],
   },
 ]
