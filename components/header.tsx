@@ -80,7 +80,7 @@ export function Header() {
           </motion.li>
           <motion.li initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}>
             <a
-              href="/cv-amparo-cardoso-bosch.pdf"
+              href={language === "es" ? "/Amparo_Cardoso_Bosch_CV_Full_Stack_2025.pdf" : "/Amparo_Cardoso_Bosch_CV_Full_Stack_EN_2025.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer rounded-md bg-primary/10 px-4 py-2 text-sm text-primary transition-all hover:bg-primary/20"
@@ -133,7 +133,7 @@ export function Header() {
               </li>
               <li>
                 <a
-                  href="/cv-amparo-cardoso-bosch.pdf"
+                  href={language === "es" ? "/Amparo_Cardoso_Bosch_CV_Full_Stack_2025.pdf" : "/Amparo_Cardoso_Bosch_CV_Full_Stack_EN_2025.pdf"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block cursor-pointer rounded-md bg-primary/10 px-4 py-2 text-sm text-primary transition-all hover:bg-primary/20"

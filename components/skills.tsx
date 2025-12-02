@@ -319,7 +319,7 @@ export function Skills({ onSkillClick, highlightedTech }: SkillsProps) {
             className="mt-12 flex justify-center"
           >
             <a
-              href="/cv-amparo-cardoso-bosch.pdf"
+              href={language === "es" ? "/Amparo_Cardoso_Bosch_CV_Full_Stack_2025.pdf" : "Amparo_Cardoso_Bosch_CV_Full_Stack_EN_2025.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="border-sweep inline-flex cursor-pointer items-center gap-2 rounded-full bg-muted px-6 py-3 font-medium text-foreground transition-colors hover:bg-primary/20 hover:text-primary"
