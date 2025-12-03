@@ -277,7 +277,7 @@ export function Experience({ highlightedTech, onClearHighlight, onTechSelect }: 
             </h2>
             <button
               onClick={() => setShowTechSearch(!showTechSearch)}
-              className="flex cursor-pointer items-center gap-2 rounded-md border border-border px-4 py-2 text-sm text-muted-foreground transition-all hover:border-primary hover:text-primary"
+              className="flex cursor-pointer items-center gap-2 rounded-md border border-primary text-primary px-4 py-2 text-sm text-muted-foreground transition-all hover:border-primary hover:bg-primary/20 hover:text-primary"
             >
               {showTechSearch ? <X size={16} /> : <Search size={16} />}
               {language === "es" ? "Buscar por tecnología" : "Search by technology"}
