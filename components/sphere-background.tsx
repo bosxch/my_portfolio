@@ -20,15 +20,17 @@ export function SphereBackground() {
     let animationFrameId: number
     let points: Point[] = []
     let rotation = 0
+    let isMobile = window.innerWidth < 768
 
     const resize = () => {
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
+      isMobile = window.innerWidth < 768
     }
 
     const createSphere = () => {
       points = []
-      const numPoints = 2000
+      const numPoints = isMobile ? 800 : 2000
       const goldenRatio = (1 + Math.sqrt(5)) / 2
       const angleIncrement = Math.PI * 2 * goldenRatio
 
@@ -47,7 +49,7 @@ export function SphereBackground() {
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      rotation += 0.0003
+      rotation += isMobile ? 0.0012 : 0.0003
 
       const radius = Math.min(canvas.width, canvas.height) * 0.5
       const centerX = canvas.width + radius * 0.5
@@ -99,7 +101,7 @@ export function SphereBackground() {
       projectedPoints.forEach((point) => {
         const baseAlpha = 0.06 + point.scale * 0.12
         const alpha = baseAlpha + point.brightness * 0.15
-        const pointRadius = 0.6 + point.scale * 1.2
+        const pointRadius = isMobile ? 0.6 + point.scale * 1.2 : 0.5 + point.scale * 1.0
 
         const green = 200 + Math.floor(point.brightness * 55)
         const red = 15 + Math.floor(point.brightness * 10)
