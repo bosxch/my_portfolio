@@ -97,15 +97,13 @@ export function SphereBackground() {
       projectedPoints.sort((a, b) => a.z - b.z)
 
       projectedPoints.forEach((point) => {
-        // Increased green channel values and adjusted for more emerald tone
-        const baseAlpha = 0.015 + point.scale * 0.04
-        const alpha = baseAlpha + point.brightness * 0.06
+        const baseAlpha = 0.06 + point.scale * 0.12
+        const alpha = baseAlpha + point.brightness * 0.15
         const pointRadius = 0.6 + point.scale * 1.2
 
-        // More emerald/green tones (closer to primary color)
-        const green = 140 + Math.floor(point.brightness * 80)
-        const red = 30 + Math.floor(point.brightness * 25)
-        const blue = 50 + Math.floor(point.brightness * 30)
+        const green = 200 + Math.floor(point.brightness * 55)
+        const red = 15 + Math.floor(point.brightness * 10)
+        const blue = 80 + Math.floor(point.brightness * 30)
 
         ctx.beginPath()
         ctx.arc(point.x, point.y, pointRadius, 0, Math.PI * 2)
